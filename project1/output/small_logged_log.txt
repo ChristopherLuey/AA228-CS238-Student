@@ -1,0 +1,56 @@
+2025-10-17 01:32:06,920 - INFO - ================================================================================
+2025-10-17 01:32:06,920 - INFO - Starting Bayesian Structure Learning
+2025-10-17 01:32:06,920 - INFO - Input file: project1/data/small.csv
+2025-10-17 01:32:06,920 - INFO - Output file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small_logged.gph
+2025-10-17 01:32:06,920 - INFO - Log file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small_logged_log.txt
+2025-10-17 01:32:06,920 - INFO - Start time: 2025-10-17 01:32:06
+2025-10-17 01:32:06,920 - INFO - ================================================================================
+2025-10-17 01:32:06,920 - INFO - Loading dataset...
+2025-10-17 01:32:06,927 - INFO - Dataset loaded successfully
+2025-10-17 01:32:06,928 - INFO - Variables: 8
+2025-10-17 01:32:06,928 - INFO - Rows: 889
+2025-10-17 01:32:06,928 - INFO - Variable names: ['age', 'portembarked', 'fare', 'numparentschildren', 'passengerclass', 'sex', 'numsiblings', 'survived']
+2025-10-17 01:32:06,928 - INFO - Cardinalities: [3 3 3 3 3 2 3 2]
+2025-10-17 01:32:06,928 - INFO - Configuration generated:
+2025-10-17 01:32:06,928 - INFO -   Max parents: 5
+2025-10-17 01:32:06,928 - INFO -   Hill restarts: 12
+2025-10-17 01:32:06,928 - INFO -   Tabu tenure: 4
+2025-10-17 01:32:06,928 - INFO -   SA iterations: 5000
+2025-10-17 01:32:06,928 - INFO -   SA start temp: 1.0
+2025-10-17 01:32:06,928 - INFO -   SA end temp: 0.01
+2025-10-17 01:32:06,928 - INFO -   GA population: 40
+2025-10-17 01:32:06,928 - INFO -   GA generations: 80
+2025-10-17 01:32:06,928 - INFO -   GA elite fraction: 0.15
+2025-10-17 01:32:06,928 - INFO -   GA mutation rate: 0.2
+2025-10-17 01:32:06,928 - INFO -   GA crossover rate: 0.9
+2025-10-17 01:32:06,928 - INFO -   Candidate limit: 6
+2025-10-17 01:32:06,929 - INFO -   Random seed: 42
+2025-10-17 01:32:06,929 - INFO - Starting structure learning...
+2025-10-17 01:32:09,984 - INFO - Structure learning completed!
+2025-10-17 01:32:09,985 - INFO - Learning time: 3.05 seconds
+2025-10-17 01:32:09,985 - INFO - Best algorithm: genetic
+2025-10-17 01:32:09,985 - INFO - Best score: -3794.855598
+2025-10-17 01:32:09,985 - INFO - Algorithm details: {'generations': 80, 'hill_score': -3794.8555977097926, 'sa_score': -3794.8555977097935, 'ga_score': -3794.855597709792}
+2025-10-17 01:32:09,985 - INFO - Final graph has 14 edges
+2025-10-17 01:32:09,985 - INFO - Final graph edges:
+2025-10-17 01:32:09,986 - INFO -   age -> sex
+2025-10-17 01:32:09,986 - INFO -   portembarked -> sex
+2025-10-17 01:32:09,986 - INFO -   fare -> passengerclass
+2025-10-17 01:32:09,986 - INFO -   numparentschildren -> age
+2025-10-17 01:32:09,986 - INFO -   numparentschildren -> sex
+2025-10-17 01:32:09,986 - INFO -   passengerclass -> age
+2025-10-17 01:32:09,986 - INFO -   passengerclass -> portembarked
+2025-10-17 01:32:09,986 - INFO -   passengerclass -> sex
+2025-10-17 01:32:09,986 - INFO -   passengerclass -> survived
+2025-10-17 01:32:09,986 - INFO -   sex -> survived
+2025-10-17 01:32:09,986 - INFO -   numsiblings -> age
+2025-10-17 01:32:09,986 - INFO -   numsiblings -> numparentschildren
+2025-10-17 01:32:09,986 - INFO -   numsiblings -> passengerclass
+2025-10-17 01:32:09,986 - INFO -   numsiblings -> sex
+2025-10-17 01:32:09,986 - INFO - Writing output file...
+2025-10-17 01:32:09,987 - INFO - ================================================================================
+2025-10-17 01:32:09,987 - INFO - Run completed successfully!
+2025-10-17 01:32:09,987 - INFO - Total runtime: 3.07 seconds
+2025-10-17 01:32:09,987 - INFO - End time: 2025-10-17 01:32:09
+2025-10-17 01:32:09,987 - INFO - ================================================================================
+2025-10-17 01:32:09,989 - INFO - Summary saved to: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small_logged_summary.json

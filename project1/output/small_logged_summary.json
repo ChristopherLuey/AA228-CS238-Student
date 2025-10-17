@@ -1,0 +1,117 @@
+{
+  "timestamp": "2025-10-17T01:32:09.988012",
+  "input_file": "project1/data/small.csv",
+  "output_file": "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small_logged.gph",
+  "dataset_stats": {
+    "num_vars": 8,
+    "num_rows": 889,
+    "variable_names": [
+      "age",
+      "portembarked",
+      "fare",
+      "numparentschildren",
+      "passengerclass",
+      "sex",
+      "numsiblings",
+      "survived"
+    ],
+    "cardinalities": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      2,
+      3,
+      2
+    ]
+  },
+  "config": {
+    "max_parents": 5,
+    "hill_restarts": 12,
+    "tabu_tenure": 4,
+    "sa_iterations": 5000,
+    "sa_start_temp": 1.0,
+    "sa_end_temp": 0.01,
+    "ga_population": 40,
+    "ga_generations": 80,
+    "ga_elite_frac": 0.15,
+    "ga_mutation_rate": 0.2,
+    "ga_crossover_rate": 0.9,
+    "candidate_limit": 6,
+    "random_seed": 42
+  },
+  "results": {
+    "algorithm": "genetic",
+    "score": -3794.855597709792,
+    "details": {
+      "generations": 80,
+      "hill_score": -3794.8555977097926,
+      "sa_score": -3794.8555977097935,
+      "ga_score": -3794.855597709792
+    },
+    "num_edges": 14,
+    "edges": [
+      [
+        "age",
+        "sex"
+      ],
+      [
+        "portembarked",
+        "sex"
+      ],
+      [
+        "fare",
+        "passengerclass"
+      ],
+      [
+        "numparentschildren",
+        "age"
+      ],
+      [
+        "numparentschildren",
+        "sex"
+      ],
+      [
+        "passengerclass",
+        "age"
+      ],
+      [
+        "passengerclass",
+        "portembarked"
+      ],
+      [
+        "passengerclass",
+        "sex"
+      ],
+      [
+        "passengerclass",
+        "survived"
+      ],
+      [
+        "sex",
+        "survived"
+      ],
+      [
+        "numsiblings",
+        "age"
+      ],
+      [
+        "numsiblings",
+        "numparentschildren"
+      ],
+      [
+        "numsiblings",
+        "passengerclass"
+      ],
+      [
+        "numsiblings",
+        "sex"
+      ]
+    ]
+  },
+  "timing": {
+    "total_runtime": 3.0676941871643066,
+    "learning_time": 3.05289888381958
+  }
+}

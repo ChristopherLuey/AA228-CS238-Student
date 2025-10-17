@@ -1,0 +1,183 @@
+{
+  "timestamp": "2025-10-17T01:45:47.463800",
+  "input_file": "project1/data/medium.csv",
+  "output_file": "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium.gph",
+  "dataset_stats": {
+    "num_vars": 13,
+    "num_rows": 6497,
+    "variable_names": [
+      "color",
+      "fixedacidity",
+      "volatileacidity",
+      "citricacid",
+      "residualsugar",
+      "chlorides",
+      "freesulfurdioxide",
+      "totalsulfurdioxide",
+      "density",
+      "pH",
+      "sulphates",
+      "alcohol",
+      "quality"
+    ],
+    "cardinalities": [
+      2,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      8,
+      8
+    ]
+  },
+  "config": {
+    "max_parents": 5,
+    "hill_restarts": 20,
+    "tabu_tenure": 6,
+    "sa_iterations": 8000,
+    "sa_start_temp": 1.2,
+    "sa_end_temp": 0.02,
+    "ga_population": 60,
+    "ga_generations": 120,
+    "ga_elite_frac": 0.12,
+    "ga_mutation_rate": 0.25,
+    "ga_crossover_rate": 0.85,
+    "candidate_limit": 10,
+    "random_seed": 84
+  },
+  "results": {
+    "algorithm": "genetic",
+    "score": -96312.058451053,
+    "details": {
+      "generations": 120,
+      "hill_score": -96348.104510274,
+      "sa_score": -96348.10451027402,
+      "ga_score": -96312.058451053
+    },
+    "num_edges": 28,
+    "edges": [
+      [
+        "color",
+        "fixedacidity"
+      ],
+      [
+        "color",
+        "volatileacidity"
+      ],
+      [
+        "color",
+        "citricacid"
+      ],
+      [
+        "color",
+        "residualsugar"
+      ],
+      [
+        "color",
+        "chlorides"
+      ],
+      [
+        "color",
+        "totalsulfurdioxide"
+      ],
+      [
+        "color",
+        "density"
+      ],
+      [
+        "color",
+        "pH"
+      ],
+      [
+        "fixedacidity",
+        "citricacid"
+      ],
+      [
+        "fixedacidity",
+        "pH"
+      ],
+      [
+        "volatileacidity",
+        "citricacid"
+      ],
+      [
+        "residualsugar",
+        "fixedacidity"
+      ],
+      [
+        "totalsulfurdioxide",
+        "freesulfurdioxide"
+      ],
+      [
+        "density",
+        "fixedacidity"
+      ],
+      [
+        "density",
+        "residualsugar"
+      ],
+      [
+        "density",
+        "chlorides"
+      ],
+      [
+        "density",
+        "totalsulfurdioxide"
+      ],
+      [
+        "sulphates",
+        "color"
+      ],
+      [
+        "alcohol",
+        "fixedacidity"
+      ],
+      [
+        "alcohol",
+        "volatileacidity"
+      ],
+      [
+        "alcohol",
+        "citricacid"
+      ],
+      [
+        "alcohol",
+        "residualsugar"
+      ],
+      [
+        "alcohol",
+        "chlorides"
+      ],
+      [
+        "alcohol",
+        "density"
+      ],
+      [
+        "quality",
+        "color"
+      ],
+      [
+        "quality",
+        "volatileacidity"
+      ],
+      [
+        "quality",
+        "freesulfurdioxide"
+      ],
+      [
+        "quality",
+        "alcohol"
+      ]
+    ]
+  },
+  "timing": {
+    "total_runtime": 546.4671528339386,
+    "learning_time": 546.4317991733551
+  }
+}
