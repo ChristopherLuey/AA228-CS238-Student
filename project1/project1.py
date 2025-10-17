@@ -1,6 +1,7 @@
 import argparse
 import json
 import logging
+import subprocess
 import sys
 import time
 from datetime import datetime
@@ -58,7 +59,7 @@ def write_gph(edges: List[Tuple[int, int]], idx2names: Dict[int, str], filename:
             fh.write(f"{idx2names[u]}, {idx2names[v]}\n")
 
 
-def compute(infile: str, outfile: str) -> None:
+def compute(infile: str, outfile: str, generate_png: bool = True) -> None:
     # Set up logging
     log_file = Path(outfile).parent / f"{Path(outfile).stem}_log.txt"
     logger = setup_logging(str(log_file))
@@ -177,6 +178,36 @@ def compute(infile: str, outfile: str) -> None:
     with open(json_file, 'w') as f:
         json.dump(summary, f, indent=2)
     logger.info(f"Summary saved to: {json_file}")
+    
+    # Generate PNG visualization
+    if generate_png:
+        logger.info("Generating PNG visualization...")
+        try:
+            png_file = Path(outfile).parent / f"{Path(outfile).stem}.png"
+            plot_script = Path(__file__).parent / "plot_graph.py"
+            
+            # Run plot_graph.py to generate PNG
+            cmd = [
+                sys.executable, 
+                str(plot_script),
+                str(outfile),
+                "--output", str(png_file),
+                "--no-show",
+                "--title", Path(outfile).stem,
+                "--layout", "hierarchy",
+                "--figsize", "12x10"
+            ]
+            
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+            if result.returncode == 0:
+                logger.info(f"PNG visualization saved to: {png_file}")
+            else:
+                logger.warning(f"Failed to generate PNG: {result.stderr}")
+                
+        except subprocess.TimeoutExpired:
+            logger.warning("PNG generation timed out")
+        except Exception as e:
+            logger.warning(f"Failed to generate PNG: {e}")
 
 
 def _parse_args(argv: List[str]) -> argparse.Namespace:
@@ -189,6 +220,11 @@ def _parse_args(argv: List[str]) -> argparse.Namespace:
         "--dry-run",
         action="store_true",
         help="Only initialize learner and print configuration summary.",
+    )
+    parser.add_argument(
+        "--no-png",
+        action="store_true",
+        help="Skip PNG visualization generation.",
     )
     return parser.parse_args(argv)
 
@@ -236,7 +272,7 @@ def main(argv: List[str] | None = None) -> None:
         logger.info("DRY RUN COMPLETED")
         logger.info("="*80)
         return
-    compute(infile, outfile)
+    compute(infile, outfile, generate_png=not args.no_png)
 
 
 if __name__ == "__main__":

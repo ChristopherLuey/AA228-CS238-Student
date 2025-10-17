@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-10-17T01:53:17.392569",
-  "input_file": "project1/data/large.csv",
-  "output_file": "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/large.gph",
+  "timestamp": "2025-10-17T02:34:22.559937",
+  "input_file": "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/large.csv",
+  "output_file": "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/large/large.gph",
   "dataset_stats": {
     "num_vars": 50,
     "num_rows": 10000,
@@ -127,34 +127,18 @@
   },
   "results": {
     "algorithm": "genetic",
-    "score": -420787.31528281886,
+    "score": -420800.39705594955,
     "details": {
       "generations": 150,
-      "hill_score": -423244.43499542587,
-      "sa_score": -423244.4349954264,
-      "ga_score": -420787.31528281886
+      "hill_score": -422299.6575577733,
+      "sa_score": -422299.65755777387,
+      "ga_score": -420800.39705594955
     },
-    "num_edges": 144,
+    "num_edges": 138,
     "edges": [
-      [
-        "WW",
-        "NX"
-      ],
-      [
-        "WW",
-        "WF"
-      ],
-      [
-        "WW",
-        "GC"
-      ],
       [
         "RE",
         "YQ"
-      ],
-      [
-        "RE",
-        "DG"
       ],
       [
         "RE",
@@ -170,7 +154,15 @@
       ],
       [
         "RE",
+        "NX"
+      ],
+      [
+        "RE",
         "EV"
+      ],
+      [
+        "RE",
+        "YH"
       ],
       [
         "RE",
@@ -179,6 +171,10 @@
       [
         "RE",
         "XT"
+      ],
+      [
+        "HH",
+        "OF"
       ],
       [
         "HH",
@@ -193,12 +189,16 @@
         "YR"
       ],
       [
-        "YQ",
-        "MY"
+        "MU",
+        "ZL"
+      ],
+      [
+        "MU",
+        "ND"
       ],
       [
         "YQ",
-        "UO"
+        "MY"
       ],
       [
         "YQ",
@@ -210,11 +210,7 @@
       ],
       [
         "DG",
-        "WW"
-      ],
-      [
-        "DG",
-        "NX"
+        "MY"
       ],
       [
         "DG",
@@ -222,7 +218,19 @@
       ],
       [
         "DG",
+        "WF"
+      ],
+      [
+        "DG",
+        "YH"
+      ],
+      [
+        "DG",
         "DW"
+      ],
+      [
+        "TV",
+        "MU"
       ],
       [
         "TV",
@@ -234,11 +242,11 @@
       ],
       [
         "TV",
-        "ZL"
+        "JP"
       ],
       [
         "TV",
-        "ND"
+        "ZL"
       ],
       [
         "TV",
@@ -253,6 +261,10 @@
         "FZ"
       ],
       [
+        "YP",
+        "US"
+      ],
+      [
         "IB",
         "QS"
       ],
@@ -262,7 +274,7 @@
       ],
       [
         "IB",
-        "JI"
+        "KE"
       ],
       [
         "IB",
@@ -270,11 +282,23 @@
       ],
       [
         "IM",
+        "QS"
+      ],
+      [
+        "IM",
+        "TU"
+      ],
+      [
+        "EY",
         "TU"
       ],
       [
         "QS",
-        "ND"
+        "YP"
+      ],
+      [
+        "QS",
+        "CA"
       ],
       [
         "QS",
@@ -293,8 +317,20 @@
         "WN"
       ],
       [
+        "UN",
+        "XT"
+      ],
+      [
+        "NX",
+        "WW"
+      ],
+      [
         "NX",
         "MU"
+      ],
+      [
+        "NX",
+        "DG"
       ],
       [
         "NX",
@@ -303,6 +339,26 @@
       [
         "NX",
         "IM"
+      ],
+      [
+        "NX",
+        "XQ"
+      ],
+      [
+        "NX",
+        "YH"
+      ],
+      [
+        "NX",
+        "ZL"
+      ],
+      [
+        "NX",
+        "UQ"
+      ],
+      [
+        "OF",
+        "ME"
       ],
       [
         "FR",
@@ -314,15 +370,7 @@
       ],
       [
         "FR",
-        "UO"
-      ],
-      [
-        "FR",
         "ZX"
-      ],
-      [
-        "OG",
-        "QZ"
       ],
       [
         "OG",
@@ -334,15 +382,7 @@
       ],
       [
         "OG",
-        "UO"
-      ],
-      [
-        "OG",
-        "YH"
-      ],
-      [
-        "OG",
-        "GC"
+        "XQ"
       ],
       [
         "OG",
@@ -369,16 +409,20 @@
         "SD"
       ],
       [
-        "MY",
-        "BX"
+        "OG",
+        "UQ"
+      ],
+      [
+        "OG",
+        "JI"
       ],
       [
         "MY",
         "FZ"
       ],
       [
-        "EV",
-        "WW"
+        "MY",
+        "JI"
       ],
       [
         "EV",
@@ -386,19 +430,23 @@
       ],
       [
         "EV",
-        "WN"
+        "WF"
       ],
       [
         "EV",
         "GS"
       ],
       [
-        "TU",
-        "CA"
+        "YR",
+        "WW"
       ],
       [
         "TU",
         "ND"
+      ],
+      [
+        "TU",
+        "DW"
       ],
       [
         "UO",
@@ -406,11 +454,19 @@
       ],
       [
         "UO",
+        "OG"
+      ],
+      [
+        "UO",
         "YR"
       ],
       [
         "WF",
-        "NX"
+        "ND"
+      ],
+      [
+        "WF",
+        "GC"
       ],
       [
         "WF",
@@ -419,22 +475,6 @@
       [
         "WF",
         "SD"
-      ],
-      [
-        "WF",
-        "JI"
-      ],
-      [
-        "JP",
-        "RE"
-      ],
-      [
-        "JP",
-        "TV"
-      ],
-      [
-        "JP",
-        "EY"
       ],
       [
         "JP",
@@ -450,6 +490,10 @@
       ],
       [
         "JP",
+        "ZL"
+      ],
+      [
+        "JP",
         "UC"
       ],
       [
@@ -457,24 +501,12 @@
         "XT"
       ],
       [
-        "XQ",
-        "OG"
-      ],
-      [
-        "XQ",
-        "VU"
-      ],
-      [
-        "ME",
-        "US"
+        "CA",
+        "ND"
       ],
       [
         "CA",
         "RZ"
-      ],
-      [
-        "YH",
-        "RE"
       ],
       [
         "YH",
@@ -486,11 +518,11 @@
       ],
       [
         "YH",
-        "DG"
+        "OG"
       ],
       [
         "YH",
-        "WF"
+        "BQ"
       ],
       [
         "WN",
@@ -498,31 +530,15 @@
       ],
       [
         "ZL",
-        "MU"
-      ],
-      [
-        "ND",
-        "CA"
+        "US"
       ],
       [
         "GC",
-        "WF"
-      ],
-      [
-        "GC",
-        "JI"
-      ],
-      [
-        "BQ",
-        "RE"
+        "WW"
       ],
       [
         "BQ",
         "MU"
-      ],
-      [
-        "BQ",
-        "DG"
       ],
       [
         "BQ",
@@ -534,11 +550,7 @@
       ],
       [
         "BQ",
-        "YH"
-      ],
-      [
-        "BQ",
-        "ZL"
+        "XQ"
       ],
       [
         "BQ",
@@ -561,16 +573,16 @@
         "OF"
       ],
       [
+        "ZX",
+        "GC"
+      ],
+      [
         "VU",
         "YP"
       ],
       [
         "VU",
-        "QS"
-      ],
-      [
-        "VU",
-        "OF"
+        "IB"
       ],
       [
         "VU",
@@ -586,15 +598,7 @@
       ],
       [
         "CZ",
-        "WN"
-      ],
-      [
-        "CZ",
         "GS"
-      ],
-      [
-        "CZ",
-        "JI"
       ],
       [
         "BX",
@@ -605,8 +609,8 @@
         "KE"
       ],
       [
-        "BX",
-        "UQ"
+        "RZ",
+        "YP"
       ],
       [
         "RZ",
@@ -633,14 +637,6 @@
         "BX"
       ],
       [
-        "UC",
-        "UQ"
-      ],
-      [
-        "DW",
-        "WW"
-      ],
-      [
         "DW",
         "HH"
       ],
@@ -650,7 +646,7 @@
       ],
       [
         "DW",
-        "TU"
+        "GC"
       ],
       [
         "DW",
@@ -661,24 +657,16 @@
         "BX"
       ],
       [
+        "DW",
+        "KE"
+      ],
+      [
         "FZ",
         "YR"
       ],
       [
         "KE",
         "ZX"
-      ],
-      [
-        "SD",
-        "YP"
-      ],
-      [
-        "SD",
-        "KE"
-      ],
-      [
-        "SD",
-        "US"
       ],
       [
         "US",
@@ -689,20 +677,8 @@
         "HH"
       ],
       [
-        "JI",
-        "MY"
-      ],
-      [
-        "JI",
-        "CA"
-      ],
-      [
         "XT",
         "YQ"
-      ],
-      [
-        "XT",
-        "UN"
       ],
       [
         "XT",
@@ -715,7 +691,7 @@
     ]
   },
   "timing": {
-    "total_runtime": 348.1891121864319,
-    "learning_time": 347.6036310195923
+    "total_runtime": 235.0776708126068,
+    "learning_time": 234.85741472244263
   }
 }

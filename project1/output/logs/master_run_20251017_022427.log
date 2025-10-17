@@ -1,0 +1,77 @@
+[2025-10-17 02:24:27] Setting up directory structure...
+[2025-10-17 02:24:28] Created output directory: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small
+[2025-10-17 02:24:28] Created output directory: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium
+[2025-10-17 02:24:28] Created output directory: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/large
+[2025-10-17 02:24:28] Checking prerequisites...
+[2025-10-17 02:24:28] Found data file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/small.csv
+[2025-10-17 02:24:28] Found data file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/medium.csv
+[2025-10-17 02:24:29] Found data file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/large.csv
+[2025-10-17 02:24:29] All prerequisites satisfied!
+[2025-10-17 02:24:29] =================================================================================
+[2025-10-17 02:24:29]   Starting small dataset processing
+[2025-10-17 02:24:29] =================================================================================
+[2025-10-17 02:24:29] Analyzing dataset: small
+Rows: 889
+Columns: 8
+Variables: ['age', 'portembarked', 'fare', 'numparentschildren', 'passengerclass', 'sex', 'numsiblings', 'survived']
+Memory usage: 0.05 MB
+[2025-10-17 02:24:32] Running Bayesian structure learning for small...
+[2025-10-17 02:24:32] Command: python3 project1.py "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/small.csv" "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small/small.gph"
+[2025-10-17 02:24:38] ✓ small dataset completed successfully!
+[2025-10-17 02:24:38]   Runtime: 00:00:09
+[2025-10-17 02:24:38]   Output files created in: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small
+[2025-10-17 02:24:38] Generated files:
+[2025-10-17 02:24:38]   total 760
+[2025-10-17 02:24:38]   drwxr-xr-x   6 christopherluey  staff     192 Oct 17 02:24 .
+[2025-10-17 02:24:38]   drwxr-xr-x@ 21 christopherluey  staff     672 Oct 17 02:24 ..
+[2025-10-17 02:24:38]   -rw-r--r--   1 christopherluey  staff    4591 Oct 17 02:24 small_log.txt
+[2025-10-17 02:24:38]   -rw-r--r--   1 christopherluey  staff    2324 Oct 17 02:24 small_summary.json
+[2025-10-17 02:24:38]   -rw-r--r--   1 christopherluey  staff     298 Oct 17 02:24 small.gph
+[2025-10-17 02:24:38]   -rw-r--r--   1 christopherluey  staff  370228 Oct 17 02:24 small.png
+[2025-10-17 02:24:38] =================================================================================
+[2025-10-17 02:24:38]   Starting medium dataset processing
+[2025-10-17 02:24:38] =================================================================================
+[2025-10-17 02:24:38] Analyzing dataset: medium
+Rows: 6497
+Columns: 13
+Variables: ['color', 'fixedacidity', 'volatileacidity', 'citricacid', 'residualsugar', 'chlorides', 'freesulfurdioxide', 'totalsulfurdioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+Memory usage: 0.64 MB
+[2025-10-17 02:24:39] Running Bayesian structure learning for medium...
+[2025-10-17 02:24:39] Command: python3 project1.py "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/medium.csv" "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium/medium.gph"
+[2025-10-17 02:30:26] ✓ medium dataset completed successfully!
+[2025-10-17 02:30:26]   Runtime: 00:05:48
+[2025-10-17 02:30:26]   Output files created in: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium
+[2025-10-17 02:30:26] Generated files:
+[2025-10-17 02:30:26]   total 968
+[2025-10-17 02:30:26]   drwxr-xr-x@  6 christopherluey  staff     192 Oct 17 02:30 .
+[2025-10-17 02:30:26]   drwxr-xr-x@ 22 christopherluey  staff     704 Oct 17 02:24 ..
+[2025-10-17 02:30:26]   -rw-r--r--@  1 christopherluey  staff    5519 Oct 17 02:30 medium_log.txt
+[2025-10-17 02:30:26]   -rw-r--r--   1 christopherluey  staff    3303 Oct 17 02:30 medium_summary.json
+[2025-10-17 02:30:26]   -rw-r--r--   1 christopherluey  staff     605 Oct 17 02:30 medium.gph
+[2025-10-17 02:30:26]   -rw-r--r--   1 christopherluey  staff  475347 Oct 17 02:30 medium.png
+[2025-10-17 02:30:26] =================================================================================
+[2025-10-17 02:30:26]   Starting large dataset processing
+[2025-10-17 02:30:26] =================================================================================
+[2025-10-17 02:30:26] Analyzing dataset: large
+Rows: 10000
+Columns: 50
+Variables: ['WW', 'RE', 'HH', 'MU', 'YQ', 'DG', 'TV', 'YP', 'QZ', 'IB', 'IM', 'EY', 'QS', 'UN', 'NX', 'OF', 'FR', 'OG', 'MY', 'EV', 'YR', 'TU', 'UO', 'WF', 'JP', 'XQ', 'ME', 'CA', 'YH', 'WN', 'ZL', 'ND', 'GC', 'GS', 'BQ', 'ZX', 'VU', 'CZ', 'BX', 'RZ', 'UC', 'DW', 'FZ', 'KE', 'SD', 'US', 'UQ', 'JI', 'PM', 'XT']
+Memory usage: 3.81 MB
+[2025-10-17 02:30:27] Running Bayesian structure learning for large...
+[2025-10-17 02:30:27] Command: python3 project1.py "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/large.csv" "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/large/large.gph"
+[2025-10-17 02:34:24] ✓ large dataset completed successfully!
+[2025-10-17 02:34:24]   Runtime: 00:03:58
+[2025-10-17 02:34:24]   Output files created in: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/large
+[2025-10-17 02:34:24] Generated files:
+[2025-10-17 02:34:24]   total 2272
+[2025-10-17 02:34:24]   drwxr-xr-x@  6 christopherluey  staff      192 Oct 17 02:34 .
+[2025-10-17 02:34:24]   drwxr-xr-x@ 22 christopherluey  staff      704 Oct 17 02:24 ..
+[2025-10-17 02:34:24]   -rw-r--r--@  1 christopherluey  staff    10142 Oct 17 02:34 large_log.txt
+[2025-10-17 02:34:24]   -rw-r--r--   1 christopherluey  staff     8416 Oct 17 02:34 large_summary.json
+[2025-10-17 02:34:24]   -rw-r--r--   1 christopherluey  staff      966 Oct 17 02:34 large.gph
+[2025-10-17 02:34:24]   -rw-r--r--   1 christopherluey  staff  1133442 Oct 17 02:34 large.png
+[2025-10-17 02:34:24] Generating comprehensive summary report...
+[2025-10-17 02:34:24] Summary report saved to: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/run_summary_20251017_022427.txt
+[2025-10-17 02:34:24] Cleaning up temporary files...
+[2025-10-17 02:34:24] Cleanup completed!
+[2025-10-17 02:34:24] 🎉 All datasets processed successfully!

@@ -1,0 +1,183 @@
+2025-10-17 02:30:27,482 - INFO - ================================================================================
+2025-10-17 02:30:27,482 - INFO - Starting Bayesian Structure Learning
+2025-10-17 02:30:27,482 - INFO - Input file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/large.csv
+2025-10-17 02:30:27,482 - INFO - Output file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/large/large.gph
+2025-10-17 02:30:27,482 - INFO - Log file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/large/large_log.txt
+2025-10-17 02:30:27,482 - INFO - Start time: 2025-10-17 02:30:27
+2025-10-17 02:30:27,482 - INFO - ================================================================================
+2025-10-17 02:30:27,482 - INFO - Loading dataset...
+2025-10-17 02:30:27,503 - INFO - Dataset loaded successfully
+2025-10-17 02:30:27,503 - INFO - Variables: 50
+2025-10-17 02:30:27,503 - INFO - Rows: 10000
+2025-10-17 02:30:27,503 - INFO - Variable names: ['WW', 'RE', 'HH', 'MU', 'YQ', 'DG', 'TV', 'YP', 'QZ', 'IB', 'IM', 'EY', 'QS', 'UN', 'NX', 'OF', 'FR', 'OG', 'MY', 'EV', 'YR', 'TU', 'UO', 'WF', 'JP', 'XQ', 'ME', 'CA', 'YH', 'WN', 'ZL', 'ND', 'GC', 'GS', 'BQ', 'ZX', 'VU', 'CZ', 'BX', 'RZ', 'UC', 'DW', 'FZ', 'KE', 'SD', 'US', 'UQ', 'JI', 'PM', 'XT']
+2025-10-17 02:30:27,504 - INFO - Cardinalities: [2 3 3 3 2 3 4 3 4 3 3 2 4 2 3 2 3 4 2 4 3 3 2 2 2 2 4 2 2 2 4 2 3 2 4 2 2
+ 3 2 3 4 2 3 3 3 4 4 2 4 3]
+2025-10-17 02:30:27,504 - INFO - Configuration generated:
+2025-10-17 02:30:27,504 - INFO -   Max parents: 4
+2025-10-17 02:30:27,504 - INFO -   Hill restarts: 40
+2025-10-17 02:30:27,504 - INFO -   Tabu tenure: 8
+2025-10-17 02:30:27,504 - INFO -   SA iterations: 12000
+2025-10-17 02:30:27,504 - INFO -   SA start temp: 1.5
+2025-10-17 02:30:27,504 - INFO -   SA end temp: 0.05
+2025-10-17 02:30:27,504 - INFO -   GA population: 80
+2025-10-17 02:30:27,504 - INFO -   GA generations: 150
+2025-10-17 02:30:27,504 - INFO -   GA elite fraction: 0.1
+2025-10-17 02:30:27,504 - INFO -   GA mutation rate: 0.3
+2025-10-17 02:30:27,504 - INFO -   GA crossover rate: 0.85
+2025-10-17 02:30:27,504 - INFO -   Candidate limit: 12
+2025-10-17 02:30:27,504 - INFO -   Random seed: 131
+2025-10-17 02:30:27,504 - INFO - Starting structure learning...
+2025-10-17 02:34:22,554 - INFO - Structure learning completed!
+2025-10-17 02:34:22,555 - INFO - Learning time: 234.86 seconds
+2025-10-17 02:34:22,555 - INFO - Best algorithm: genetic
+2025-10-17 02:34:22,555 - INFO - Best score: -420800.397056
+2025-10-17 02:34:22,555 - INFO - Algorithm details: {'generations': 150, 'hill_score': -422299.6575577733, 'sa_score': -422299.65755777387, 'ga_score': -420800.39705594955}
+2025-10-17 02:34:22,555 - INFO - Final graph has 138 edges
+2025-10-17 02:34:22,555 - INFO - Final graph edges:
+2025-10-17 02:34:22,555 - INFO -   RE -> YQ
+2025-10-17 02:34:22,555 - INFO -   RE -> IM
+2025-10-17 02:34:22,555 - INFO -   RE -> QS
+2025-10-17 02:34:22,555 - INFO -   RE -> UN
+2025-10-17 02:34:22,555 - INFO -   RE -> NX
+2025-10-17 02:34:22,555 - INFO -   RE -> EV
+2025-10-17 02:34:22,555 - INFO -   RE -> YH
+2025-10-17 02:34:22,555 - INFO -   RE -> ZX
+2025-10-17 02:34:22,555 - INFO -   RE -> XT
+2025-10-17 02:34:22,555 - INFO -   HH -> OF
+2025-10-17 02:34:22,555 - INFO -   HH -> YR
+2025-10-17 02:34:22,555 - INFO -   HH -> PM
+2025-10-17 02:34:22,555 - INFO -   MU -> YR
+2025-10-17 02:34:22,555 - INFO -   MU -> ZL
+2025-10-17 02:34:22,555 - INFO -   MU -> ND
+2025-10-17 02:34:22,555 - INFO -   YQ -> MY
+2025-10-17 02:34:22,555 - INFO -   YQ -> ME
+2025-10-17 02:34:22,555 - INFO -   YQ -> DW
+2025-10-17 02:34:22,555 - INFO -   DG -> MY
+2025-10-17 02:34:22,555 - INFO -   DG -> EV
+2025-10-17 02:34:22,555 - INFO -   DG -> WF
+2025-10-17 02:34:22,555 - INFO -   DG -> YH
+2025-10-17 02:34:22,555 - INFO -   DG -> DW
+2025-10-17 02:34:22,555 - INFO -   TV -> MU
+2025-10-17 02:34:22,555 - INFO -   TV -> FR
+2025-10-17 02:34:22,555 - INFO -   TV -> TU
+2025-10-17 02:34:22,555 - INFO -   TV -> JP
+2025-10-17 02:34:22,556 - INFO -   TV -> ZL
+2025-10-17 02:34:22,556 - INFO -   TV -> GS
+2025-10-17 02:34:22,556 - INFO -   TV -> VU
+2025-10-17 02:34:22,556 - INFO -   TV -> FZ
+2025-10-17 02:34:22,556 - INFO -   YP -> US
+2025-10-17 02:34:22,556 - INFO -   IB -> QS
+2025-10-17 02:34:22,556 - INFO -   IB -> FR
+2025-10-17 02:34:22,556 - INFO -   IB -> KE
+2025-10-17 02:34:22,556 - INFO -   IB -> PM
+2025-10-17 02:34:22,556 - INFO -   IM -> QS
+2025-10-17 02:34:22,556 - INFO -   IM -> TU
+2025-10-17 02:34:22,556 - INFO -   EY -> TU
+2025-10-17 02:34:22,556 - INFO -   QS -> YP
+2025-10-17 02:34:22,556 - INFO -   QS -> CA
+2025-10-17 02:34:22,556 - INFO -   QS -> RZ
+2025-10-17 02:34:22,556 - INFO -   UN -> IM
+2025-10-17 02:34:22,556 - INFO -   UN -> TU
+2025-10-17 02:34:22,556 - INFO -   UN -> WN
+2025-10-17 02:34:22,556 - INFO -   UN -> XT
+2025-10-17 02:34:22,556 - INFO -   NX -> WW
+2025-10-17 02:34:22,556 - INFO -   NX -> MU
+2025-10-17 02:34:22,556 - INFO -   NX -> DG
+2025-10-17 02:34:22,556 - INFO -   NX -> IB
+2025-10-17 02:34:22,556 - INFO -   NX -> IM
+2025-10-17 02:34:22,556 - INFO -   NX -> XQ
+2025-10-17 02:34:22,556 - INFO -   NX -> YH
+2025-10-17 02:34:22,556 - INFO -   NX -> ZL
+2025-10-17 02:34:22,556 - INFO -   NX -> UQ
+2025-10-17 02:34:22,556 - INFO -   OF -> ME
+2025-10-17 02:34:22,556 - INFO -   FR -> OF
+2025-10-17 02:34:22,556 - INFO -   FR -> MY
+2025-10-17 02:34:22,556 - INFO -   FR -> ZX
+2025-10-17 02:34:22,556 - INFO -   OG -> IB
+2025-10-17 02:34:22,556 - INFO -   OG -> MY
+2025-10-17 02:34:22,556 - INFO -   OG -> XQ
+2025-10-17 02:34:22,556 - INFO -   OG -> BQ
+2025-10-17 02:34:22,556 - INFO -   OG -> VU
+2025-10-17 02:34:22,556 - INFO -   OG -> CZ
+2025-10-17 02:34:22,556 - INFO -   OG -> BX
+2025-10-17 02:34:22,556 - INFO -   OG -> DW
+2025-10-17 02:34:22,556 - INFO -   OG -> SD
+2025-10-17 02:34:22,556 - INFO -   OG -> UQ
+2025-10-17 02:34:22,556 - INFO -   OG -> JI
+2025-10-17 02:34:22,557 - INFO -   MY -> FZ
+2025-10-17 02:34:22,557 - INFO -   MY -> JI
+2025-10-17 02:34:22,557 - INFO -   EV -> HH
+2025-10-17 02:34:22,557 - INFO -   EV -> WF
+2025-10-17 02:34:22,557 - INFO -   EV -> GS
+2025-10-17 02:34:22,557 - INFO -   YR -> WW
+2025-10-17 02:34:22,557 - INFO -   TU -> ND
+2025-10-17 02:34:22,557 - INFO -   TU -> DW
+2025-10-17 02:34:22,557 - INFO -   UO -> QS
+2025-10-17 02:34:22,557 - INFO -   UO -> OG
+2025-10-17 02:34:22,557 - INFO -   UO -> YR
+2025-10-17 02:34:22,557 - INFO -   WF -> ND
+2025-10-17 02:34:22,557 - INFO -   WF -> GC
+2025-10-17 02:34:22,557 - INFO -   WF -> KE
+2025-10-17 02:34:22,557 - INFO -   WF -> SD
+2025-10-17 02:34:22,557 - INFO -   JP -> UN
+2025-10-17 02:34:22,557 - INFO -   JP -> CA
+2025-10-17 02:34:22,557 - INFO -   JP -> WN
+2025-10-17 02:34:22,557 - INFO -   JP -> ZL
+2025-10-17 02:34:22,557 - INFO -   JP -> UC
+2025-10-17 02:34:22,557 - INFO -   JP -> XT
+2025-10-17 02:34:22,557 - INFO -   CA -> ND
+2025-10-17 02:34:22,557 - INFO -   CA -> RZ
+2025-10-17 02:34:22,557 - INFO -   YH -> HH
+2025-10-17 02:34:22,557 - INFO -   YH -> MU
+2025-10-17 02:34:22,557 - INFO -   YH -> OG
+2025-10-17 02:34:22,557 - INFO -   YH -> BQ
+2025-10-17 02:34:22,557 - INFO -   WN -> PM
+2025-10-17 02:34:22,557 - INFO -   ZL -> US
+2025-10-17 02:34:22,557 - INFO -   GC -> WW
+2025-10-17 02:34:22,557 - INFO -   BQ -> MU
+2025-10-17 02:34:22,557 - INFO -   BQ -> TV
+2025-10-17 02:34:22,557 - INFO -   BQ -> JP
+2025-10-17 02:34:22,557 - INFO -   BQ -> XQ
+2025-10-17 02:34:22,557 - INFO -   BQ -> VU
+2025-10-17 02:34:22,557 - INFO -   BQ -> CZ
+2025-10-17 02:34:22,557 - INFO -   BQ -> RZ
+2025-10-17 02:34:22,557 - INFO -   BQ -> XT
+2025-10-17 02:34:22,557 - INFO -   ZX -> OF
+2025-10-17 02:34:22,557 - INFO -   ZX -> GC
+2025-10-17 02:34:22,557 - INFO -   VU -> YP
+2025-10-17 02:34:22,557 - INFO -   VU -> IB
+2025-10-17 02:34:22,557 - INFO -   VU -> FZ
+2025-10-17 02:34:22,557 - INFO -   CZ -> EV
+2025-10-17 02:34:22,557 - INFO -   CZ -> WF
+2025-10-17 02:34:22,558 - INFO -   CZ -> GS
+2025-10-17 02:34:22,558 - INFO -   BX -> GS
+2025-10-17 02:34:22,558 - INFO -   BX -> KE
+2025-10-17 02:34:22,558 - INFO -   RZ -> YP
+2025-10-17 02:34:22,558 - INFO -   RZ -> QZ
+2025-10-17 02:34:22,558 - INFO -   RZ -> ZX
+2025-10-17 02:34:22,558 - INFO -   UC -> YQ
+2025-10-17 02:34:22,558 - INFO -   UC -> EY
+2025-10-17 02:34:22,558 - INFO -   UC -> EV
+2025-10-17 02:34:22,558 - INFO -   UC -> BX
+2025-10-17 02:34:22,558 - INFO -   DW -> HH
+2025-10-17 02:34:22,558 - INFO -   DW -> IB
+2025-10-17 02:34:22,558 - INFO -   DW -> GC
+2025-10-17 02:34:22,558 - INFO -   DW -> CZ
+2025-10-17 02:34:22,558 - INFO -   DW -> BX
+2025-10-17 02:34:22,558 - INFO -   DW -> KE
+2025-10-17 02:34:22,558 - INFO -   FZ -> YR
+2025-10-17 02:34:22,558 - INFO -   KE -> ZX
+2025-10-17 02:34:22,558 - INFO -   US -> PM
+2025-10-17 02:34:22,558 - INFO -   JI -> HH
+2025-10-17 02:34:22,558 - INFO -   XT -> YQ
+2025-10-17 02:34:22,558 - INFO -   XT -> FZ
+2025-10-17 02:34:22,558 - INFO -   XT -> SD
+2025-10-17 02:34:22,558 - INFO - Writing output file...
+2025-10-17 02:34:22,559 - INFO - ================================================================================
+2025-10-17 02:34:22,559 - INFO - Run completed successfully!
+2025-10-17 02:34:22,559 - INFO - Total runtime: 235.08 seconds
+2025-10-17 02:34:22,559 - INFO - End time: 2025-10-17 02:34:22
+2025-10-17 02:34:22,559 - INFO - ================================================================================
+2025-10-17 02:34:22,560 - INFO - Summary saved to: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/large/large_summary.json
+2025-10-17 02:34:22,560 - INFO - Generating PNG visualization...
+2025-10-17 02:34:24,178 - INFO - PNG visualization saved to: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/large/large.png

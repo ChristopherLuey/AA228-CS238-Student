@@ -1,0 +1,72 @@
+2025-10-17 02:24:40,082 - INFO - ================================================================================
+2025-10-17 02:24:40,082 - INFO - Starting Bayesian Structure Learning
+2025-10-17 02:24:40,082 - INFO - Input file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/medium.csv
+2025-10-17 02:24:40,082 - INFO - Output file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium/medium.gph
+2025-10-17 02:24:40,082 - INFO - Log file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium/medium_log.txt
+2025-10-17 02:24:40,082 - INFO - Start time: 2025-10-17 02:24:40
+2025-10-17 02:24:40,082 - INFO - ================================================================================
+2025-10-17 02:24:40,082 - INFO - Loading dataset...
+2025-10-17 02:24:40,087 - INFO - Dataset loaded successfully
+2025-10-17 02:24:40,087 - INFO - Variables: 13
+2025-10-17 02:24:40,087 - INFO - Rows: 6497
+2025-10-17 02:24:40,087 - INFO - Variable names: ['color', 'fixedacidity', 'volatileacidity', 'citricacid', 'residualsugar', 'chlorides', 'freesulfurdioxide', 'totalsulfurdioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality']
+2025-10-17 02:24:40,087 - INFO - Cardinalities: [2 5 5 5 5 5 5 5 5 5 5 8 8]
+2025-10-17 02:24:40,088 - INFO - Configuration generated:
+2025-10-17 02:24:40,088 - INFO -   Max parents: 5
+2025-10-17 02:24:40,088 - INFO -   Hill restarts: 20
+2025-10-17 02:24:40,088 - INFO -   Tabu tenure: 6
+2025-10-17 02:24:40,088 - INFO -   SA iterations: 8000
+2025-10-17 02:24:40,088 - INFO -   SA start temp: 1.2
+2025-10-17 02:24:40,089 - INFO -   SA end temp: 0.02
+2025-10-17 02:24:40,089 - INFO -   GA population: 60
+2025-10-17 02:24:40,089 - INFO -   GA generations: 120
+2025-10-17 02:24:40,089 - INFO -   GA elite fraction: 0.12
+2025-10-17 02:24:40,089 - INFO -   GA mutation rate: 0.25
+2025-10-17 02:24:40,089 - INFO -   GA crossover rate: 0.85
+2025-10-17 02:24:40,089 - INFO -   Candidate limit: 10
+2025-10-17 02:24:40,089 - INFO -   Random seed: 84
+2025-10-17 02:24:40,089 - INFO - Starting structure learning...
+2025-10-17 02:30:25,039 - INFO - Structure learning completed!
+2025-10-17 02:30:25,039 - INFO - Learning time: 344.94 seconds
+2025-10-17 02:30:25,039 - INFO - Best algorithm: genetic
+2025-10-17 02:30:25,040 - INFO - Best score: -96312.058451
+2025-10-17 02:30:25,040 - INFO - Algorithm details: {'generations': 120, 'hill_score': -96348.104510274, 'sa_score': -96348.10451027402, 'ga_score': -96312.058451053}
+2025-10-17 02:30:25,040 - INFO - Final graph has 28 edges
+2025-10-17 02:30:25,040 - INFO - Final graph edges:
+2025-10-17 02:30:25,040 - INFO -   color -> fixedacidity
+2025-10-17 02:30:25,040 - INFO -   color -> volatileacidity
+2025-10-17 02:30:25,040 - INFO -   color -> citricacid
+2025-10-17 02:30:25,040 - INFO -   color -> residualsugar
+2025-10-17 02:30:25,040 - INFO -   color -> chlorides
+2025-10-17 02:30:25,040 - INFO -   color -> totalsulfurdioxide
+2025-10-17 02:30:25,040 - INFO -   color -> density
+2025-10-17 02:30:25,040 - INFO -   color -> pH
+2025-10-17 02:30:25,040 - INFO -   fixedacidity -> citricacid
+2025-10-17 02:30:25,040 - INFO -   fixedacidity -> pH
+2025-10-17 02:30:25,040 - INFO -   volatileacidity -> citricacid
+2025-10-17 02:30:25,040 - INFO -   residualsugar -> fixedacidity
+2025-10-17 02:30:25,040 - INFO -   totalsulfurdioxide -> freesulfurdioxide
+2025-10-17 02:30:25,040 - INFO -   density -> fixedacidity
+2025-10-17 02:30:25,040 - INFO -   density -> residualsugar
+2025-10-17 02:30:25,040 - INFO -   density -> chlorides
+2025-10-17 02:30:25,040 - INFO -   density -> totalsulfurdioxide
+2025-10-17 02:30:25,040 - INFO -   sulphates -> color
+2025-10-17 02:30:25,040 - INFO -   alcohol -> fixedacidity
+2025-10-17 02:30:25,040 - INFO -   alcohol -> volatileacidity
+2025-10-17 02:30:25,040 - INFO -   alcohol -> citricacid
+2025-10-17 02:30:25,040 - INFO -   alcohol -> residualsugar
+2025-10-17 02:30:25,040 - INFO -   alcohol -> chlorides
+2025-10-17 02:30:25,040 - INFO -   alcohol -> density
+2025-10-17 02:30:25,040 - INFO -   quality -> color
+2025-10-17 02:30:25,040 - INFO -   quality -> volatileacidity
+2025-10-17 02:30:25,040 - INFO -   quality -> freesulfurdioxide
+2025-10-17 02:30:25,040 - INFO -   quality -> alcohol
+2025-10-17 02:30:25,040 - INFO - Writing output file...
+2025-10-17 02:30:25,041 - INFO - ================================================================================
+2025-10-17 02:30:25,041 - INFO - Run completed successfully!
+2025-10-17 02:30:25,041 - INFO - Total runtime: 344.96 seconds
+2025-10-17 02:30:25,041 - INFO - End time: 2025-10-17 02:30:25
+2025-10-17 02:30:25,041 - INFO - ================================================================================
+2025-10-17 02:30:25,041 - INFO - Summary saved to: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium/medium_summary.json
+2025-10-17 02:30:25,041 - INFO - Generating PNG visualization...
+2025-10-17 02:30:26,540 - INFO - PNG visualization saved to: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium/medium.png

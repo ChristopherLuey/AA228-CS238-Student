@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-10-17T01:45:47.463800",
-  "input_file": "project1/data/medium.csv",
-  "output_file": "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium.gph",
+  "timestamp": "2025-10-17T02:30:25.041553",
+  "input_file": "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/medium.csv",
+  "output_file": "/Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/medium/medium.gph",
   "dataset_stats": {
     "num_vars": 13,
     "num_rows": 6497,
@@ -177,7 +177,7 @@
     ]
   },
   "timing": {
-    "total_runtime": 546.4671528339386,
-    "learning_time": 546.4317991733551
+    "total_runtime": 344.959095954895,
+    "learning_time": 344.9390621185303
   }
 }

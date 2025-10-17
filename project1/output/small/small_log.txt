@@ -1,0 +1,58 @@
+2025-10-17 02:24:34,144 - INFO - ================================================================================
+2025-10-17 02:24:34,144 - INFO - Starting Bayesian Structure Learning
+2025-10-17 02:24:34,144 - INFO - Input file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/data/small.csv
+2025-10-17 02:24:34,144 - INFO - Output file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small/small.gph
+2025-10-17 02:24:34,144 - INFO - Log file: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small/small_log.txt
+2025-10-17 02:24:34,144 - INFO - Start time: 2025-10-17 02:24:34
+2025-10-17 02:24:34,144 - INFO - ================================================================================
+2025-10-17 02:24:34,144 - INFO - Loading dataset...
+2025-10-17 02:24:34,148 - INFO - Dataset loaded successfully
+2025-10-17 02:24:34,148 - INFO - Variables: 8
+2025-10-17 02:24:34,148 - INFO - Rows: 889
+2025-10-17 02:24:34,148 - INFO - Variable names: ['age', 'portembarked', 'fare', 'numparentschildren', 'passengerclass', 'sex', 'numsiblings', 'survived']
+2025-10-17 02:24:34,148 - INFO - Cardinalities: [3 3 3 3 3 2 3 2]
+2025-10-17 02:24:34,148 - INFO - Configuration generated:
+2025-10-17 02:24:34,148 - INFO -   Max parents: 5
+2025-10-17 02:24:34,148 - INFO -   Hill restarts: 12
+2025-10-17 02:24:34,148 - INFO -   Tabu tenure: 4
+2025-10-17 02:24:34,148 - INFO -   SA iterations: 5000
+2025-10-17 02:24:34,148 - INFO -   SA start temp: 1.0
+2025-10-17 02:24:34,148 - INFO -   SA end temp: 0.01
+2025-10-17 02:24:34,148 - INFO -   GA population: 40
+2025-10-17 02:24:34,148 - INFO -   GA generations: 80
+2025-10-17 02:24:34,148 - INFO -   GA elite fraction: 0.15
+2025-10-17 02:24:34,148 - INFO -   GA mutation rate: 0.2
+2025-10-17 02:24:34,148 - INFO -   GA crossover rate: 0.9
+2025-10-17 02:24:34,148 - INFO -   Candidate limit: 6
+2025-10-17 02:24:34,148 - INFO -   Random seed: 42
+2025-10-17 02:24:34,148 - INFO - Starting structure learning...
+2025-10-17 02:24:36,759 - INFO - Structure learning completed!
+2025-10-17 02:24:36,759 - INFO - Learning time: 2.61 seconds
+2025-10-17 02:24:36,760 - INFO - Best algorithm: genetic
+2025-10-17 02:24:36,760 - INFO - Best score: -3794.855598
+2025-10-17 02:24:36,760 - INFO - Algorithm details: {'generations': 80, 'hill_score': -3794.8555977097926, 'sa_score': -3794.8555977097935, 'ga_score': -3794.855597709792}
+2025-10-17 02:24:36,760 - INFO - Final graph has 14 edges
+2025-10-17 02:24:36,760 - INFO - Final graph edges:
+2025-10-17 02:24:36,760 - INFO -   age -> sex
+2025-10-17 02:24:36,760 - INFO -   portembarked -> sex
+2025-10-17 02:24:36,760 - INFO -   fare -> passengerclass
+2025-10-17 02:24:36,760 - INFO -   numparentschildren -> age
+2025-10-17 02:24:36,760 - INFO -   numparentschildren -> sex
+2025-10-17 02:24:36,760 - INFO -   passengerclass -> age
+2025-10-17 02:24:36,760 - INFO -   passengerclass -> portembarked
+2025-10-17 02:24:36,760 - INFO -   passengerclass -> sex
+2025-10-17 02:24:36,760 - INFO -   passengerclass -> survived
+2025-10-17 02:24:36,760 - INFO -   sex -> survived
+2025-10-17 02:24:36,760 - INFO -   numsiblings -> age
+2025-10-17 02:24:36,760 - INFO -   numsiblings -> numparentschildren
+2025-10-17 02:24:36,760 - INFO -   numsiblings -> passengerclass
+2025-10-17 02:24:36,760 - INFO -   numsiblings -> sex
+2025-10-17 02:24:36,760 - INFO - Writing output file...
+2025-10-17 02:24:36,761 - INFO - ================================================================================
+2025-10-17 02:24:36,761 - INFO - Run completed successfully!
+2025-10-17 02:24:36,761 - INFO - Total runtime: 2.62 seconds
+2025-10-17 02:24:36,761 - INFO - End time: 2025-10-17 02:24:36
+2025-10-17 02:24:36,761 - INFO - ================================================================================
+2025-10-17 02:24:36,762 - INFO - Summary saved to: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small/small_summary.json
+2025-10-17 02:24:36,762 - INFO - Generating PNG visualization...
+2025-10-17 02:24:38,735 - INFO - PNG visualization saved to: /Users/christopherluey/Library/CloudStorage/GoogleDrive-christopherluey2025@u.northwestern.edu/My Drive/Fall 2025/AA228/AA228-CS238-Student/project1/output/small/small.png
